@@ -41,13 +41,16 @@ class RUN {
     if (fs.existsSync("./Plugins/.git")) {
       await fs.rmSync("./Plugins/.git", { recursive: true });
     }
-    execSync(`mv Plugins/* ./`);
-    if (fs.existsSync("./Plugins")) {
-      await fs.rmSync("./Plugins", { recursive: true });
-    }
+    this.moveFilesFromPlugins();
+
     this.pushToGhPages();
   }
-
+  async moveFilesFromPlugins() {
+    const pluginFiles = await fs.readdir("./Plugins");
+    for (const file of pluginFiles) {
+      await fs.move(`./Plugins/${file}`, `./${file}`);
+    }
+  }
   async cloneRepo(url, path, branch) {
     try {
       if (fs.existsSync(path)) {
