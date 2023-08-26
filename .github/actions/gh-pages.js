@@ -48,7 +48,7 @@ class RUN {
   async moveFilesFromPlugins() {
     const pluginFiles = await fs.readdir("./Plugins");
     for (const file of pluginFiles) {
-      await fs.move(`./Plugins/${file}`, `./${file}`);
+      await fs.move(`./Plugins/${file}`, `./${file}`,  { overwrite: true });
     }
   }
   async cloneRepo(url, path, branch) {
