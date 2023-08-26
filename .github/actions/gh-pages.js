@@ -45,6 +45,7 @@ class RUN {
     if (fs.existsSync("./Plugins")) {
       await fs.rmSync("./Plugins", { recursive: true });
     }
+    this.pushToGhPages();
   }
 
   async cloneRepo(url, path, branch) {
@@ -73,5 +74,7 @@ class RUN {
       console.error("Error pushing to gh-pages branch:", error.message);
     }
   }
-  
 }
+
+const cls = new RUN();
+cls.Start();
