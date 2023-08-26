@@ -7,8 +7,8 @@ currently being supported with security updates.
 
 | Version | Supported                                 |
 | ------- | ----------------------------------------- |
-| 1.0.1   | :index page createtion using github auto: |
-| 1.0.2   | :code obfuscated using github auto:       |
+| 1.0.1   | index page createtion using github auto: |
+| 1.0.2   | code obfuscated using github auto:       |
 
 ## Reporting a Vulnerability
 
