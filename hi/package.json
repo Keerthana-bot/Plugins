@@ -1,0 +1,19 @@
+{
+    "name": "hi",
+    "version": "1.0.0",
+    "description": "send replay for message hi ",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Ajayos/keerthana.git"
+    },
+    "keywords": [
+      "ajayos",
+      "keerthana"
+    ],
+    "author": "Ajay o s",
+    "license": "Apache-2.0",
+    "bugs": {
+      "url": "https://github.com/Ajayos/keerthana/issues"
+    },
+    "homepage": "https://github.com/Ajayos/keerthana#readme"
+  }

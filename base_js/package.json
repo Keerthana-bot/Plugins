@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@ajayos/nodelog": "^1.0.2",
+    "@octokit/rest": "^20.0.1",
+    "axios": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^6.0.0",
+    "path": "^0.12.7",
+    "simple-git": "^3.19.1"
+  },
+  "name": "base",
+  "description": "source code base upload",
+  "version": "1.0.1",
+  "main": "index.js",
+  "bin": {
+    "base": "bin/copy.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js",
+    "build": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keerthana-bot/source-base.git"
+  },
+  "keywords": [
+    "base"
+  ],
+  "author": "Ajay o s",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/keerthana-bot/source-base/issues"
+  },
+  "homepage": "https://github.com/keerthana-bot/source-base#readme"
+}
